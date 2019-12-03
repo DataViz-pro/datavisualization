@@ -17,15 +17,20 @@ limitations under the License.
 
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153861196-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-153861196-1');
-
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<amp-analytics type="gtag" data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "UA-153861196-1",
+    "config" : {
+      "UA-153861196-1": { "groups": "default" }
+    }
+  }
+}
 </script>
+</amp-analytics>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
   <meta charset="utf-8">
   <title>Data Science Gallery</title>
@@ -72,11 +77,11 @@ limitations under the License.
         </li>
           <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./index.html"><div class="gallery-sidebar-nav-item-text">Home</div><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
           <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./smart-cities\smart-cities.html"><div class="gallery-sidebar-nav-item-text">Smart<br>City</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/smart-city.png" srcset="./img/icons/smart-city.png", "./img/icons/smart-city@2x.png"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
-          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./big-data\big-data.html"><div class="gallery-sidebar-nav-item-text">Big<br>Data</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/big-data.png" srcset="./img/icons/big-data.png 1x, ./img/icons/big-data@2x.png 2x"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
-          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./social-networks\social-networks.html"><div class="gallery-sidebar-nav-item-text">Social<br>Data</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/social-networks.png" srcset="./img/icons/social-networks.png 1x, ./img/icons/social-networks@2x.png 2x"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
-          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./traffic-models\traffic-models.html"><div class="gallery-sidebar-nav-item-text">Traffic<br>Data</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/traffic-models.png" srcset="./img/icons/traffic-models.png 1x, ./img/icons/traffic-models@2x.jpg 2x"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
-          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./machine-learning\machine-learning.html"><div class="gallery-sidebar-nav-item-text">Machine<br>Learning</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/machine-learning.png" srcset="./img/icons/machine-learning.png 1x, ./img/icons/machine-learning@2x.png 2x"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
-          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./credits\credits.html"><div class="gallery-sidebar-nav-item-text">Credits<br></div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/credits.png" srcset="./img/icons/credits.png 1x, ./img/icons/credits@2x.png 2x"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
+          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./big-data\big-data.html"><div class="gallery-sidebar-nav-item-text">Big<br>Data</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/big-data.png" srcset="./img/icons/big-data.png", ./img/icons/big-data@2x.png"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
+          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./social-networks\social-networks.html"><div class="gallery-sidebar-nav-item-text">Social<br>Data</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/social-networks.png" srcset="./img/icons/social-networks.png", ./img/icons/social-networks@2x.png"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
+          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./traffic-models\traffic-models.html"><div class="gallery-sidebar-nav-item-text">Traffic<br>Data</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/traffic-models.png" srcset="./img/icons/traffic-models.png", ./img/icons/traffic-models@2x.png"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
+          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./machine-learning\machine-learning.html"><div class="gallery-sidebar-nav-item-text">Machine<br>Learning</div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/machine-learning.png" srcset="./img/icons/machine-learning.png", ./img/icons/machine-learning@2x.png"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
+          <li class="ampstart-nav-item gallery-sidebar-nav-item"><a class="ampstart-nav-link" href="./credits\credits.html"><div class="gallery-sidebar-nav-item-text">Credits<br></div><amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive" src="./img/icons/credits.png" srcset="./img/icons/credits.png", ./img/icons/credits@2x.png"></amp-img><div class="gallery-sidebar-nav-item-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline></svg></div></a></li>
     </ul>
   </nav>
 
