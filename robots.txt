@@ -1,0 +1,8 @@
+User-Agent: *
+
+Disallow: /traffic-models/uber-data/bogota.html
+Disallow: /traffic-models/uber-data/mexico.html
+Disallow: /big-data/kepler-gl/kepler.html
+Disallow: /big-data/small-data/base_kp.html
+
+Sitemap: https://www.datavisualization.pro/sitemap.xml
